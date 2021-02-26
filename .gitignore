@@ -1,0 +1,5 @@
+# ignore libraries, etc. 
+stuff_needed/*
+
+
+
