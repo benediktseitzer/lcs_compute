@@ -1,0 +1,18 @@
+ &INPUT_VELOCITY
+ filename 			= 'G_12.88099.nc',     	! name of velocity file to use
+ /
+ &RESOLUTION
+ x_res           		= 0.5D0,               	! Resolution (1.0 = from input file, 0.5 = 2x as high as input file)
+ y_res           		= 0.5D0,               	! Resolution (1.0 = from input file, 0.5 = 2x as high as input file)
+ / 
+ &INTEGRATION
+ integration_method     	= 'RK4',       		! 4th order Runge Kutta (more accurate) "RK4", "EULER" (faster)
+ integration_direction 		= 'FORWARDS',		! "FORWARDS" or "BACKWARDS" in time
+ t                      	= 0.01D0,      		! total integration time
+ dt                     	= 0.0001D0,    		! timestep length
+ /
+ &VARIATIONAL
+ stepsize			= 0.05D0,		! integration stepsize for lcs
+ lf				= 0.2D0,		! length allowed for continuous failures of (A) and (B)
+ lmin				= 1.1D0,		! minimum length for lcs
+ /

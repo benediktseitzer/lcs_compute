@@ -1,0 +1,4 @@
+gfortran time.f90 -o time.out
+
+gfortran read_jc.f90 libjc.a libjpeg_bene.a -O3 -w -o read_jc.out
+
